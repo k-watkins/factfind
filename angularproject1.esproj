@@ -5,6 +5,7 @@
   <PropertyGroup>
     <StartupCommand>npm start</StartupCommand>
     <JavaScriptTestFramework>Jasmine</JavaScriptTestFramework>
+    <BuildCommandWorkingDirectory>C:\Users\Kyle\Documents\factfinder\factfind\angularproject1</BuildCommandWorkingDirectory>
   </PropertyGroup>
   <ItemGroup>
     <Script Include="**" Exclude="*.esproj;**\node_modules\**" />
