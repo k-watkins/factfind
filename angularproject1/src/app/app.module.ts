@@ -12,6 +12,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { EmploymentComponent } from './employment/employment.component';
+import { IncomeAssetsComponent } from './income-assets/income-assets.component';
+import { SummaryComponent } from './summary/summary.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { EmploymentComponent } from './employment/employment.component';
     PersonalDetailsComponent,
     NavigationComponent,
     HomeComponent,
-    EmploymentComponent
+    EmploymentComponent,
+    IncomeAssetsComponent,
+    SummaryComponent
   ],
   imports: [
     BrowserModule,

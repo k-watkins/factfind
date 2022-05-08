@@ -1,1 +1,28 @@
-<p>employment works!</p>
+<div class="container">
+  <div class="formContent">
+    <br /><h1>Employment Details</h1>
+    <form>
+      <div class="row">
+        <div class="col">
+          <label for="employerName" class="form-label">Employer Name</label>
+          <input type="text" class="form-control" id="employerName" />
+        </div>
+        <div class="col">
+          <label for="employmentType" class="form-label">Employment Type</label>
+          <select class="form-select" id="employmentType">
+            <option selected>Select...</option>
+            <option value="fullTime">Full Time</option>
+            <option value="partTime">Part Time</option>
+            <option value="selfEmployed">Self-Employed</option>
+            <option value="unemployed">Unemployed</option>
+          </select>
+        </div>
+      </div>
+      <br />
+      <div class="d-grid gap-2 d-md-flex">
+        <button class="btn btn-primary" type="button" [routerLink]="['/']">Back</button>
+        
+      </div>
+    </form>
+  </div>
+</div>
