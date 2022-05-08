@@ -1,0 +1,97 @@
+<div class="container">
+  <br />
+  <div class="formControl">
+    <form>
+      <!--INCOME-->
+      <h1>Income</h1>
+      <div class="row">
+        <div class="col">
+          <label for="incomeName" class="label-control">Income Name</label>
+          <input type="text" id="incomeName" class="form-control" />
+        </div>
+
+        <div class="col">
+          <label for="incomeAmount" class="label-control">Income Amount</label>
+          <input type="number" id="incomeAmount" class="form-control" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label for="payFrequency" class="label-control">Pay Frequency</label>
+          <select id="payFrequency" class="form-select">
+            <option selected>Select...</option>
+            <option id="weekly" value="Weekly">Weekly</option>
+            <option id="fornightly" value="Fornightly">Fornightly</option>
+            <option id="monthly" value="Monthly">Monthly</option>
+          </select>
+        </div>
+
+        <div class="col">
+          <label for="dateStarted" class="label-control">Date Started</label>
+          <input type="date" id="dateStarted" class="form-control" />
+        </div>
+      </div>
+      <hr />
+      <!--ASSETS-->
+      <h1>Assets</h1>
+      <div class="row">
+        <div class="col">
+          <label for="assetName" class="label-control">Asset Name</label>
+          <input type="text" class="form-control" id="assetName" />
+        </div>
+
+        <div class="col">
+          <label for="assetType" class="label-control">Asset Type</label>
+          <select id="assetType" class="form-select">
+            <option selected>Select...</option>
+            <option id="shares" value="Shares">Shares</option>
+            <option id="property" value="Property">Property</option>
+            <option id="other" value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label for="assetAmount" class="label-control">Asset Amount</label>
+          <input type="number" class="form-control" id="assetAmount" />
+        </div>
+      </div>
+      <hr />
+
+      <!--LIABILITIES-->
+      <h1>Liabilities</h1>
+      <div class="row">
+        <div class="col">
+          <label for="liabilityName" class="label-control">Liability Name</label>
+          <input type="text" class="form-control" id="liabilityName" />
+        </div>
+
+        <div class="col">
+          <label for="liabilityType" class="label-control">Liability Type</label>
+          <select id="liabilityType" class="form-select">
+            <option selected>Select...</option>
+            <option id="creditCard" value="Credit Card">Credit Cards</option>
+            <option id="personalLoans" value="Personal Loans">Personal Loan</option>
+            <option id="homeLoans" value="Home Loan">Home Loan</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label for="liabilityAmount" class="label-control">Liability Amount</label>
+          <input type="number" class="form-control" id="liabilityAmount" />
+        </div>
+      </div>
+
+      <br />
+      <!--ROUTING-->
+      <div class="d-grid gap-2 d-md-flex">
+        <button class="btn btn-primary" [routerLink]="['/personal']" type="button">Back</button>
+        <button class="btn btn-primary" type="button" [routerLink]="['/summary']">Next</button>
+      </div>
+    </form>
+  </div>
+</div>

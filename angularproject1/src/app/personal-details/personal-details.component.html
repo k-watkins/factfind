@@ -1,5 +1,6 @@
-<h1> Personal Details </h1>
 <div class="container">
+  <br />
+  <h1 class="center"> Personal Details </h1>
   <div class="formContent">
     <form>
       <div class="row">
@@ -39,8 +40,27 @@
           </div>
         </div>
       </div>
-      <button class="btn btn-primary position-absolute bottom-60 start-50 translate-middle-x" [routerLink]="['/employment']">Next</button>
+      <div class="row">
+        <div class="col">
+          <label for="employerName" class="form-label">Employer Name</label>
+          <input type="text" class="form-control" id="employerName" />
+        </div>
+        <div class="col">
+          <label for="employmentType" class="form-label">Employment Type</label>
+          <select class="form-select" id="employmentType">
+            <option selected>Select...</option>
+            <option value="fullTime">Full Time</option>
+            <option value="partTime">Part Time</option>
+            <option value="selfEmployed">Self-Employed</option>
+            <option value="unemployed">Unemployed</option>
+          </select>
+        </div>
+      </div>
+      <br />
+      <div class="d-grid gap-2 d-md-flex">
+        <button class="btn btn-primary" [routerLink] ="['/']" type="button">Back</button>
+        <button class="btn btn-primary" type="button" [routerLink]="['/incomeAssets']">Next</button>
+      </div>
     </form>
   </div>
 </div>
-
